@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+
+
+.movieContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.movieContainer > .movieCard{
   color: white;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.movieCard img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movieCard p {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  font-size: 1rem;
+  text-shadow: 2px 2px black;
 }
+
+.buttonContainer {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.buttonStyle {
+  border: 2px solid black;
+  border-radius: 12px;
+  cursor: pointer;
+
+}
+
+
+
+
